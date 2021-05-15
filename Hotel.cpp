@@ -17,10 +17,10 @@ void Hotel::reserva_quarto(string nome_usuario, int periodo_dias, int nro_quarto
 
 void Hotel::relatorio_quartos_ocupados()
 {
-    cout << "\n=-=-=-=-= RELATÓRIO DE QUARTOS OCUPADOS =-=-=-=-=\n";
+    cout << "\n\n=-=-=-=-= RELATÓRIO DE QUARTOS OCUPADOS =-=-=-=-=\n";
     for(int i=0; i<quartos_ocupados.size(); i++)
     {
-        cout << quartos_ocupados[i] << ", " << endl;
+        cout << quartos_ocupados[i] << ", ";
     }
 }
 
@@ -47,6 +47,7 @@ void Hotel::relatorio_geral()
 
 void Hotel::relatorio_cliente(string nome_usuario)
 {
+    cout << "\n\n=-=-=-=-=-= RELATÓRIO DE CLIENTE =-=-=-=-=-=\n";
     for(int i=0; i<clientes.size(); i++)
     {
         if(nome_usuario == clientes[i].get_nome())
@@ -54,6 +55,7 @@ void Hotel::relatorio_cliente(string nome_usuario)
             cout << "Nome: " << clientes[i].get_nome() << endl;
             cout << "NO. Quarto: " << clientes[i].get_nro_quarto() << endl;
             cout << "Quantidade de Dias: " << clientes[i].get_periodo_dias() << endl;
+            cout << "Quantidade de Reservas: " << clientes[i].get_qnt_reservas() << endl;
             cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n";
         }
     }

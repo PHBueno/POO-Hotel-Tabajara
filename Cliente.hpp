@@ -16,6 +16,7 @@ class Cliente
         int get_nro_quarto();
         int get_periodo_dias();
         char get_tipo_quarto();
+        int get_qnt_reservas();
 
     private:
     
@@ -23,6 +24,6 @@ class Cliente
         int nro_quarto;
         int periodo_dias;
         char tipo_quarto;
-        int get_qnt_reservar;
+        int reservas;
         int static qnt_reservas;
 };

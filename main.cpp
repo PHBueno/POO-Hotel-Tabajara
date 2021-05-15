@@ -34,6 +34,7 @@ int main(void)
         switch (escolha)
         {
         case 1:
+            cout << "\n\n=-=-=-=-=-= CADASTRO DE HÓSPEDE =-=-=-=-=-=-=\n";
             cout << "Informe o nome do cliente: ";
             cin >> nome;
             cout << "Quanto tempo, em dias, irá se hospedar? ";
@@ -64,6 +65,9 @@ int main(void)
             break;
         
         case 3:
+            cout << "Informe o nome do cliente que será consultado: ";
+            cin >> nome;
+            Tabajara.relatorio_cliente(nome);
             break;
 
         case 4:
@@ -73,6 +77,7 @@ int main(void)
             break;
         
         case 5:
+            cout << "\nAté mais :)\n";
             break;
         
         default:
