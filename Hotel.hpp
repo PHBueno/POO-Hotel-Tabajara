@@ -10,7 +10,9 @@ class Hotel
         Hotel();
         vector <int> get_quartos_ocupados();
         void reserva_quarto(string nome_usuario, int periodo_dias, int nro_quarto, char tipo_quarto);
-        bool get_ocupado(int nro_quarto);
+        void relatorio_quartos_ocupados();
+        void relatorio_geral();
+        void relatorio_cliente(string nome_usuario);
         
     private:
 
